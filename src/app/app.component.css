@@ -1,0 +1,29 @@
+/* styling that is applicable to every page of the application, this is mainly used for the nav bar that is on every page*/
+
+.content{
+    margin-left: 25%;
+}
+
+button { 
+    border: none;
+    color: white;
+    padding: 0.0000001px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  mat-toolbar {
+    background: rgb(70, 26, 41);
+}
+
+mat-toolbar-row {
+    width: 80%;
+margin-left: 10%;
+margin-right: 10%
+}
+
+.title-center{
+    margin-left: 25%;
+}

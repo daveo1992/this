@@ -1,0 +1,28 @@
+ mat-expansion-panel-header.mat-expanded {
+    background:green;
+    }
+    .mat-expansion-panel-header {
+    background: black ;    } 
+
+    mat-expansion-panel,
+    textarea{
+                    width: 75%;
+                    margin: auto;
+          
+    }
+    
+/*css for search bar*/
+ 
+ .search-team {
+  padding-bottom: 50px;
+   width: 40%;
+margin-left: 45%;
+
+ }
+ 
+ .form-control {
+   box-shadow: 0 10px 40px 0 #B0C1D9;
+ }
+ .form-control::placeholder  {
+   font-family: FontAwesome;
+ }

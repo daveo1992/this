@@ -1,0 +1,13 @@
+/*css for map*/
+.main {
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#map {
+    height: 300px; 
+    width: 500px;
+}

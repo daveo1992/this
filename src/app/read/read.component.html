@@ -1,0 +1,24 @@
+<!--read page with edit delete and search, the search shows results by filtering out what is not included in the search field-->
+  <div class="search-team">
+      <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="&#61442;  Search for a team">
+    </div>
+<mat-accordion *ngFor="let team of MyTeams | filter:searchText">
+    
+    <mat-expansion-panel [expanded] ="true">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                <h3>{{team.name}}</h3>
+            </mat-panel-title>
+            <mat-panel-description>
+                <h3>{{team.points}}</h3>
+                </mat-panel-description>
+                
+                <img width="150px" height="75px" src="{{team.stadium}}">
+            </mat-expansion-panel-header>
+                <mat-action-row>
+                    <button mat-button [routerLink]="['/edit',team._id]" color ="primary">Edit</button>
+                    <button mat-button (click) ="onDelete(team._id)" color="warn">Delete</button>
+                                </mat-action-row>
+                                
+    </mat-expansion-panel>
+</mat-accordion>

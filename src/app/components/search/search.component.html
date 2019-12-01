@@ -1,0 +1,31 @@
+<!-- html for search/filter function, this contains the values for the fields-->
+<form novalidate
+
+[formGroup]="form">
+<div class= "app">
+<h3>Team Filter</h3>
+<div class="row">
+<div class="col-md-6">
+<input type="text"
+formControlName="TeamName"
+class="form-control"
+placeholder="Team Name"
+/>
+</div>
+<div class="col-md-6">
+<input type="text"
+formControlName="Points"
+class="form-control"
+placeholder="Points"
+/>
+</div>
+
+<div class="col-md-12 col-sm-12">
+<button class="btn btn-primary float-right"
+(click)="search(form.value)">Search</button>
+</div>
+</div>
+</div>
+
+
+

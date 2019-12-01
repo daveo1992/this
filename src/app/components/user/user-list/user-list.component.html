@@ -1,0 +1,16 @@
+<!-- this is the html page to display the results of the search function and to hold the results in their correct fields. This also holds all the information before search function is invoked.-->
+
+<table class="table table-responsive">
+        <tr>
+        <th>Team Name</th>
+        <th>Points</th>
+       
+        </tr>
+        <tbody>
+        <tr *ngFor="let user of filteredUsers | filter: searchByKeyword: 'name'">
+        <td>{{ user.TeamName}}</td>
+        <td>{{ user.Points}}</td>
+    
+        </tr>
+        </tbody>
+        </table>

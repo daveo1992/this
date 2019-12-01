@@ -1,0 +1,37 @@
+<mat-card>
+    <form (submit)="onAddTeam(teamForm)" #teamForm="ngForm">
+     <mat-form-field>
+        <label>Team Name</label>
+        <input
+        matInput
+        type="text"
+        name="name"
+        ngModel
+        required
+        #title ="ngModel">
+</mat-form-field>
+    <mat-form-field>
+<label>Points</label>
+<textarea
+matInput
+name="points"
+ngModel
+required
+#content="ngModel"></textarea>
+    </mat-form-field>
+    <mat-form-field>
+    <label>Stadium</label>
+    <textarea
+    matInput 
+    rows="4"
+     name="stadium"
+    ngModel
+    required
+    #title ="ngModel"></textarea>
+    </mat-form-field>
+<button
+color="accent"
+type="submit">Add Team</button>
+</form>
+</mat-card>
+

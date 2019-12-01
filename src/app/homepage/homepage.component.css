@@ -1,0 +1,37 @@
+/* styling fo the homepage, includes the postion oh h and p tags and both twitter fees, this also include the border andround the header.*/
+.left {
+    display: flex;
+    margin: 25px;
+    position: absolute;
+    padding: 0 16px;
+    max-width: 960px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .right {
+    left: 75%;
+    display: flex;
+    margin: 25px;
+    position: absolute;
+    padding: 0 16px;
+    max-width: 960px;
+    flex-direction: column;
+    align-items: center;
+  }
+  h1{
+      position: centre, absolute;
+      margin: auto;
+width: 50%;
+border: 3px solid green;
+padding: 10px;
+text-align: center;
+  }
+ p{
+    position: centre, absolute;
+
+    margin: auto;
+width: 50%;
+padding: 25px;
+text-align: center;
+}
+

@@ -1,0 +1,24 @@
+<!-- html for the hompage component-->
+      
+ <h1>Welome to the local football league</h1>
+<!--html with twitter feed, the url for the twitter feed and the limit for how many tweets are displayed-->
+       <div class="left" role="main">
+<ngx-twitter-timeline 
+
+ [data] ="{sourceType: 'url', url: 'https://twitter.com/premierleague'}"
+     [opts]="{tweetLimit: 5}"
+ ></ngx-twitter-timeline>
+      
+ </div>
+ <div class="right" role="main">
+    <ngx-twitter-timeline 
+    
+     [data] ="{sourceType: 'url', url: 'https://twitter.com/FAIreland'}"
+         [opts]="{tweetLimit: 5}"
+     ></ngx-twitter-timeline>
+          
+     </div>
+
+<p> This is the home for all the information about your local football team.
+  <br> We have info on all the teams, their points and up to date images of their stadium. 
+</p>

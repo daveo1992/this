@@ -1,0 +1,27 @@
+
+<div class="container text-center">
+  <h1>{{title}}</h1>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="search-team">
+      <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="&#61442;  Search for a team">
+    </div>
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>Team</th>
+        <th>Points</th>
+        <th>Stadium</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let team of MyTeams| filter:searchText">
+        <td>{{team.name}}</td>
+        <td>{{team.points}}</td>
+      <td><img src="{{team.stadium}}"></td> 
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

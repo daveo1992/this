@@ -1,0 +1,18 @@
+/*css for the create page to adjust the sie and postion of the create form */
+
+mat-form-field,
+textarea {
+  width: 100%;
+                    margin: auto;
+
+}
+form{
+  width: 100%;
+                    margin: auto;
+}
+
+mat-card
+{
+  width: 50%;
+                    margin: auto;
+}

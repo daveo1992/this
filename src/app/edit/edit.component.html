@@ -1,0 +1,38 @@
+<!--html for edit page-->
+<mat-card>
+    <form (submit)="onEditTeam(teamForm)" #teamForm="ngForm">
+<mat-form-field>
+    <label>Team Name</label>
+    <input 
+    matInput
+    type="text"
+    name="name"
+    ngModel={{team.name}}
+    required
+    #name= "ngModel">
+</mat-form-field>
+<mat-form-field>
+    <label>Points</label>
+    <textarea
+    matInput
+    name="points"
+    ngModel={{team.points}}
+    required
+    #content="ngModel"></textarea>
+</mat-form-field>
+<mat-form-field>
+<label>Stadium</label>
+<textarea
+matInput
+rows="4"
+name="stadium"
+ngModel={{team.stadium}}
+required
+#content ="ngModel"></textarea>
+</mat-form-field>
+<button
+mat-raised-button
+color="accent"
+type="submit">Edit Team</button>
+</form>
+</mat-card>
